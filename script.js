@@ -11,13 +11,13 @@ function checkBracketsBalance(text) {
     }
 
     if (openingBrackets === closingBrackets) {
-        return '{}';  // Фигурные скобки парные
+        return '{}';
     } else {
         return openingBrackets > closingBrackets ? '{' : '}';
     }
 }
 
-// Пример использования:
+
 let exampleText = '{}{}{}{}{}}}}}}{{{{}}}}}}{{{{{{{';
 let result = checkBracketsBalance(exampleText);
-console.log(result);  // Вывод: '{'
+console.log(result);
